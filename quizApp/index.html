@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <main class="min-h-screen flex items-center justify-center">
+        <form id="quizContainer" action="#" class="w-full max-w-lg p-6 bg-white shadow-md rounded-md">
+            <div class="text-center mb-4">
+                <h1 id="question" class="text-2xl font-bold">Question Text</h1>
+            </div>
+            <div class="space-y-4">
+                <div>
+
+                    <label for="a"
+                        class="block w-full px-4 py-2 text-center bg-blue-300 hover:bg-blue-400 cursor-pointer transition duration-300 ease-in-out rounded-md">
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <span id="a_text">Answer A</span>
+                    </label>
+                </div>
+                <div>
+
+                    <label for="b"
+                        class="block w-full px-4 py-2 text-center bg-blue-300 hover:bg-blue-400 cursor-pointer transition duration-300 ease-in-out rounded-md">
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <span id="b_text">Answer B</span>
+                    </label>
+                </div>
+                <div>
+
+                    <label for="c"
+                        class="block w-full px-4 py-2 text-center bg-blue-300 hover:bg-blue-400 cursor-pointer transition duration-300 ease-in-out rounded-md">
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <span id="c_text">Answer C</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="d"
+                        class="block w-full px-4 py-2 text-center bg-blue-300 hover:bg-blue-400 cursor-pointer transition duration-300 ease-in-out rounded-md">
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <span id="d_text">Answer D</span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex justify-between mt-6">
+                <button type="button" id="previous"
+                    class="w-1/3 px-4 py-2 bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold rounded-md">
+                    Previous
+                </button>
+                <button type="button" id="next"
+                    class="w-1/3 px-4 py-2 bg-blue-300 hover:bg-blue-400 text-white font-bold rounded-md">
+                    Next
+                </button>
+                <button type="submit" id="submit"
+                    class="w-1/3 px-4 py-2 bg-green-300 hover:bg-green-400 text-white font-bold rounded-md hidden">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+</html>
